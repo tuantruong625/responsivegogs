@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0039)https://gogs.selab.ca/rhildred/api-ping -->
-<html><head data-suburl=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head data-suburl=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,7 @@
 	
 </head>
 <body>
-	<div class="full height">
+	<main class="full height">
 		<noscript>This website works better with JavaScript</noscript>
 
 		
@@ -67,7 +67,7 @@
 						<div class="column">
 							<div class="ui top secondary menu">
 								<a class="item brand" href="https://gogs.selab.ca/">
-									<img class="ui mini image" src="./assets/favicon.png">
+									<img class="ui mini image" alt="Logo" src="./assets/favicon.png">
 								</a>
 
 								
@@ -103,7 +103,7 @@
 
 										<div class="ui dropdown head link jump item poping up" data-content="User profile and more" data-variation="tiny inverted" tabindex="0">
 											<span class="text avatar">
-												<img class="ui small rounded image" src="./assets/ca1ed11e4f849117d8cab7da4cb4db39">
+												<img class="ui small rounded image" alt="Logo" src="./assets/ca1ed11e4f849117d8cab7da4cb4db39">
 												<span class="sr-only">User profile and more</span>
 												<i class="octicon octicon-triangle-down" tabindex="-1"></i>
 											</span>
@@ -176,7 +176,7 @@
 							<form class="display inline" action="https://gogs.selab.ca/rhildred/api-ping/action/unwatch?redirect_to=%2frhildred%2fapi-ping" method="POST">
 								<input type="hidden" name="_csrf" value="K0z43jpOwZf_SFIL_bsp2-HHdgI6MTU2ODgyOTk5ODUxMTM0NTI4OA==">
 								<div class="ui labeled button" tabindex="0">
-									<button class="ui basic button">
+									<button class="ui basic button" id="unwatch-button">
 										<i class="eye icon"></i>Unwatch
 									</button>
 									<a class="ui basic label" href="https://gogs.selab.ca/rhildred/api-ping/watchers">
@@ -187,21 +187,19 @@
 							<form class="display inline" action="https://gogs.selab.ca/rhildred/api-ping/action/star?redirect_to=%2frhildred%2fapi-ping" method="POST">
 								<input type="hidden" name="_csrf" value="K0z43jpOwZf_SFIL_bsp2-HHdgI6MTU2ODgyOTk5ODUxMTM0NTI4OA==">
 								<div class="ui labeled button" tabindex="0">
-									<button class="ui basic button">
+									<button class="ui basic button" id="star-button">
 										<i class="star outline icon"></i>Star
 									</button>
-									<a class="ui basic label" href="https://gogs.selab.ca/rhildred/api-ping/stars">
-										0
-									</a>
+									<a class="ui basic label" id="stars-link" href="https://gogs.selab.ca/rhildred/api-ping/stars">00</a>
 								</div>
 							</form>
 							
 								<div class="ui labeled button" tabindex="0">
-									<a class="ui basic button poping up" href="https://gogs.selab.ca/repo/fork/2">
+									<a class="ui basic button poping up" id="fork-button" href="https://gogs.selab.ca/repo/fork/2">
 										<i class="octicon octicon-repo-forked"></i>Fork
 									</a>
 									<a class="ui basic label" href="https://gogs.selab.ca/rhildred/api-ping/forks">
-										0
+										00
 									</a>
 								</div>
 							
@@ -222,7 +220,7 @@
 			
 			
 				<a class=" item" href="https://gogs.selab.ca/rhildred/api-ping/issues">
-					<i class="octicon octicon-issue-opened"></i> Issues <span class="ui blue small label">1</span>
+					<i class="octicon octicon-issue-opened"></i> Issues <span class="ui blue small label" id="label-blue">01</span>
 				</a>
 			
 			
@@ -253,7 +251,7 @@
 		
 			<p id="repo-desc">
 				<span class="description has-emoji">Mirroring this for sharing</span>
-				<a class="link" href="https://gogs.selab.ca/rhildred/api-ping"></a>
+				<a class="link" href="https://gogs.selab.ca/rhildred/api-ping" aria-label="api link"></a>
 			</p>
 			<div class="ui segment" id="git-stats">
 				<div class="ui two horizontal center link list">
@@ -334,7 +332,7 @@
 							</button>
 						
 						
-						<input id="repo-clone-url" value="https://selab.ca/rhildred/api-ping.git" readonly="">
+						<input id="repo-clone-url" value="https://selab.ca/rhildred/api-ping.git" aria-label="clone input" readonly="">
 						<button aria-label="Copy to clipboard" class="ui basic icon button poping up clipboard" id="clipboard-btn" data-original="Copy" data-success="Copied!" data-error="Press ⌘-C or Ctrl-C to copy" data-content="Copy" data-variation="inverted tiny" data-clipboard-target="#repo-clone-url">
 							<i class="octicon octicon-clippy"></i>
 						</button>
@@ -355,8 +353,8 @@
 		<tr>
 			<th class="four wide">
 				
-					<img class="ui avatar image img-12" src="./assets/ca1ed11e4f849117d8cab7da4cb4db39">
-					<a href="https://gogs.selab.ca/rhildred"><strong>Rich Hildred</strong></a>
+					<img class="ui avatar image img-12" alt="avatar" src="./assets/ca1ed11e4f849117d8cab7da4cb4db39">
+					<a href="https://gogs.selab.ca/rhildred"><strong class="header-name">Rich Hildred</strong></a>
 				
 				<a rel="nofollow" class="ui sha label" href="https://gogs.selab.ca/rhildred/api-ping/commit/bf9271d164b054998ff298ca6b1fd49cccdeaec7">bf9271d164</a>
 				<span class="grey has-emoji">oops ... never built it</span>
@@ -420,7 +418,7 @@
 					<a rel="nofollow" class="ui sha label" href="https://gogs.selab.ca/rhildred/api-ping/commit/b01c20f864b653a352605896e11b9134dc93ffdc">b01c20f864</a>
 					finally have a service that can be exposed
 				</td>
-				<td class="text grey right age"><span class="time-since poping up" title="" data-content="Sun, 25 Aug 2019 15:27:24 UTC" data-variation="inverted tiny">3 weeks ago</span></td>
+				<td class="text grey right age"><span class="time-since poping up" id="time-since" title="" data-content="Sun, 25 Aug 2019 15:27:24 UTC" data-variation="inverted tiny">3 weeks ago</span></td>
 			</tr>
 		
 			
@@ -491,9 +489,9 @@
 		
 	</h4>
 	<div class="ui unstackable attached table segment">
-		<div class="file-view markdown has-emoji">
+		<h1 class="read-me-header" >An example that runs with Traefik</h1>
+		<div class="file-view markdown">
 			
-				<div id="an-example-that-runs-with-traefik" class="anchor-wrap"><h1>An example that runs with Traefik<a class="anchor" href="https://gogs.selab.ca/rhildred/api-ping#an-example-that-runs-with-traefik"><span class="octicon octicon-link"></span></a></h1></div>
 
 <p>With Traefik already running in the stack <code>traefik-host</code>, this can be added like:</p>
 
@@ -522,12 +520,10 @@ function submitDeleteForm() {
 	</div>
 </div>
 
-	</div>
+	</main>
 	<footer>
 		<div class="ui container">
-			<div class="ui left">
-				© 2019 Gogs Version: 0.11.91.0811 Page: <strong>32ms</strong> Template: <strong>1ms</strong>
-			</div>
+			© 2019 Gogs Version: 0.11.91.0811 Page: <strong>32ms</strong> Template: <strong>1ms</strong>
 			<div class="ui right links">
 				
 				<div class="ui language bottom floating slide up dropdown link item" tabindex="0">

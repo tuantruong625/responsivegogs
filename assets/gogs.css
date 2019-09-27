@@ -174,7 +174,7 @@ code.wrap {
   color: #000;
 }
 .ui .text.grey {
-  color: #767676 !important;
+  color: #495057 !important;
 }
 .ui .text.grey a {
   color: #444 !important;
@@ -446,7 +446,8 @@ footer .ui.language .menu {
 }
 /* Overrides some styles of the Highlight.js plugin */
 .hljs {
-  background: inherit !important;
+  background: #f8f9fa !important;
+  color: #000;
   padding: 0 !important;
 }
 .ui.dropdown .menu > .item > .image,
@@ -3230,4 +3231,58 @@ footer .ui.language .menu {
 }
 .ui.user.list .item .description a:hover {
   text-decoration: underline;
+}
+
+#repo-clone-https {
+  color: #1864ab !important;
+}
+
+.header-name {
+  color: #1864ab;
+}
+
+.read-me-header {
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.divider {
+  color:#212529 !important;
+}
+
+#stars-link a{
+  color: #212529 !important; 
+  background: #fff;
+  font-size: 2rem;
+}
+
+#label-blue {
+  color:#fff !important; 
+  background: #1864ab !important;
+}
+
+#unwatch-button {
+  color: #000 !important;
+}
+
+#footer-text {
+  color: #000;
+  background: #fff;
+}
+
+#star-button {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+#fork-button {
+  color: #000 !important;
+}
+
+footer {
+  background: #fff !important;
+}
+
+.ui .container {
+  background: #fff !important;
 }
